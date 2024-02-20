@@ -10,18 +10,19 @@
       margin: 0;
       padding: 0;
       text-align: center;
-      background-color: #ebebeb;
+      background-color: #1d1d1d;
     }
 
-    #inicio {
+    #nicio {
       background-color: #0d6e00;
       color: #ffffff;
-      padding: 2px;
+      padding: -20px;
     }
 
     #logo {
       margin-bottom: 20px;
     }
+
 
     #productos-destacados {
       display: flex;
@@ -38,6 +39,7 @@
       border-radius: 9px;
       background-color: #06c200;
       position: relative;
+      color: #ffffff;
     }
 
     .destacado-oferta {
@@ -48,6 +50,7 @@
       color: #fff;
       padding: 5px 10px;
       border-radius: 5px;
+      
     }
 
     #linea-divisoria {
@@ -55,6 +58,21 @@
       border-top: 15px solid #035c00;
       margin: 10px 0;
     }
+
+
+
+
+    header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+        }
+
+
+
+
+
 
     #articulos {
       display: flex;
@@ -70,6 +88,7 @@
       border: 1px solid #000000;
       border-radius: 8px;
       background-color: #417a00;
+      color: #ffffff;
     }
 
     #carrito {
@@ -84,13 +103,15 @@
 <body>
 
   <div id="inicio">
-    <img src="LOGO 1.PNG" alt="Logo de la tienda" id="logo"style="width: 75px; height: 75px;">
+    <img src="LOGO 1.PNG" alt="Logo de la tienda" id="logo"style="width: 200px; height: 200px;">
+  
     
-    <p>BIENVENIDO A LA EMPRESA R7</p>
   </div>
-
-
-
+  <div id="linea-divisoria"></div>
+  <header>
+    <P>DIOS LE BENDIGA </P>
+ </header>
+ <div id="linea-divisoria"></div>
 
   <div id="productos-destacados">
     <div class="producto-destacado">
@@ -101,7 +122,7 @@
     </div>
 
 
-
+   
 
 
     <div class="producto-destacado">
@@ -111,6 +132,16 @@
       <button onclick="agregarAlCarrito('Producto Destacado 2', 120)">Añadir a carrito</button>
     </div>
   </div>
+
+  
+  <div id="linea-divisoria"></div>
+
+  <header>
+    <P>AUDIFONOS</P>
+ </header>
+
+
+
 
   <div id="linea-divisoria"></div>
 
@@ -138,22 +169,22 @@
         <div class="articulo">
             <img src="5.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
             <p>Precio: $150</p>
-            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">AUDIFONOS</button>
         </div>
 
 
-
+          
         <div class="articulo">
             <img src="1.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
             <p>Precio: $150</p>
-            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">AUDIFONOS</button>
         </div>
 
 
         <div class="articulo">
             <img src="5.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
             <p>Precio: $150</p>
-            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">AUDIFONOS</button>
         </div>
 
 
@@ -176,15 +207,11 @@
 
   </div>
 
-  <div id="carrito">
-    <h2>Carrito de compras</h2>
-    <ul id="lista-carrito"></ul>
-    <p>Total: $<span id="total">0</span></p>
-  </div>
+  
 
   <div id="comprar">
     <a href="https://chat.whatsapp.com/C2Lw9kVZC6u6XCGAUb1nG0" target="_blank">
-      <button>Comprar</button>
+      <button>PEDIR PRODUCTO</button>
     </a>
   </div>
 
