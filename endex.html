@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #ebebeb;
+    }
+
+    #inicio {
+      background-color: #0d6e00;
+      color: #ffffff;
+      padding: 2px;
+    }
+
+    #logo {
+      margin-bottom: 20px;
+    }
+
+    #productos-destacados {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 50px 0;
+    }
+
+    .producto-destacado {
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 9px;
+      background-color: #06c200;
+      position: relative;
+    }
+
+    .destacado-oferta {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ff1900;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    #linea-divisoria {
+      width: 100%;
+      border-top: 15px solid #035c00;
+      margin: 10px 0;
+    }
+
+    #articulos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 50px 0;
+    }
+
+    .articulo {
+      width: 30%;
+      margin: 10px;
+      padding: 5px;
+      border: 1px solid #000000;
+      border-radius: 8px;
+      background-color: #417a00;
+    }
+
+    #carrito {
+      margin: 20px 0;
+    }
+
+    #comprar {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="inicio">
+    <img src="LOGO 1.PNG" alt="Logo de la tienda" id="logo"style="width: 75px; height: 75px;">
+    
+    <p>BIENVENIDO A LA EMPRESA R7</p>
+  </div>
+
+
+
+
+  <div id="productos-destacados">
+    <div class="producto-destacado">
+      <div class="destacado-oferta">Oferta</div>
+      <img src="1.jpg" alt="Producto Destacado 1" style="width: 100px; height: 100px;">
+      <p>Precio: $80 <del>$100</del></p>
+      <button onclick="agregarAlCarrito('Producto Destacado 1', 80)">Añadir a carrito</button>
+    </div>
+
+
+
+
+
+    <div class="producto-destacado">
+      <div class="destacado-oferta">Oferta</div>
+      <img src="2.webp" alt="Producto Destacado 2"style="width: 100px; height: 100px;">
+      <p>Precio: $120 <del>$150</del></p>
+      <button onclick="agregarAlCarrito('Producto Destacado 2', 120)">Añadir a carrito</button>
+    </div>
+  </div>
+
+  <div id="linea-divisoria"></div>
+
+  <div id="articulos">
+    <div class="articulo">
+      <img src="3.jpg" alt="Producto 1"style="width: 75px; height: 90px;">
+      <p>Precio: $100</p>
+      <button onclick="agregarAlCarrito('Producto 1', 100)">Añadir a carrito</button>
+    </div>
+
+    <div class="articulo">
+      <img src="4.webp" alt="Producto 2"style="width: 100px; height: 100px;">
+      <p>Precio: $150</p>
+      <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+    </div>
+
+
+        <div class="articulo">
+            <img src="1.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
+            <p>Precio: $150</p>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+        </div>
+
+
+        <div class="articulo">
+            <img src="5.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
+            <p>Precio: $150</p>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+        </div>
+
+
+
+        <div class="articulo">
+            <img src="1.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
+            <p>Precio: $150</p>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+        </div>
+
+
+        <div class="articulo">
+            <img src="5.jpg" alt="Producto 2"style="width: 100px; height: 100px;">
+            <p>Precio: $150</p>
+            <button onclick="agregarAlCarrito('Producto 2', 150)">Añadir a carrito</button>
+        </div>
+
+
+
+
+
+
+    
+
+
+
+
+        <div id="linea-divisoria"></div>
+
+
+
+
+
+    <!-- Puedes seguir agregando más productos aquí -->
+
+  </div>
+
+  <div id="carrito">
+    <h2>Carrito de compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0</span></p>
+  </div>
+
+  <div id="comprar">
+    <a href="https://chat.whatsapp.com/C2Lw9kVZC6u6XCGAUb1nG0" target="_blank">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+  <script>
